@@ -10,11 +10,11 @@ const CardPlanetas = props => {
 		<div className="col">
 			<div className="card shadow my-3">
 				<img
-					src="https://www.lafinestradigital.com/wp-content/uploads/2011/08/planetacoruscant.jpg"
-					className="card-img-top"
+					src="https://media0.giphy.com/media/xT1R9BU7SSDC93MPQc/giphy.gif"
+					className="card-img-top rounded-top border border-warning"
 					alt="..."
 				/>
-				<div className="card-body">
+				<div className="card-body bg-dark text-light rounded-bottom border border-warning">
 					<h5 className="card-title">
 						<strong>Name:</strong> {props.name}
 					</h5>
@@ -30,12 +30,12 @@ const CardPlanetas = props => {
 					<div className="row">
 						<div className="col-6">
 							<Link to="/single">
-								<div className="btn btn-primary">Learn More</div>
+								<div className="btn btn-warning text-dark">Learn More</div>
 							</Link>
 						</div>
 						<div className="col-6">
 							<Link onClick={() => actions.addFavorite(props.name)}>
-								<div className="btn btn-outline-warning">
+								<div className="btn btn-warning">
 									<i className="fas fa-heart" />
 								</div>
 							</Link>

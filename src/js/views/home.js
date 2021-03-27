@@ -9,9 +9,9 @@ export const Home = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
-		<div className="container mb-5 pb-5">
-			<div className="col-12">
-				<h1 className="text-danger">Personajes</h1>
+		<div className="container mb-5 pb-5 rounded">
+			<div className="col-12 rounded ">
+				<h1 className="text-warning border-bottom border-warning ">CHARACTERS</h1>
 			</div>
 			<div className="row overX">
 				{store.personajes.map((item, index) => {
@@ -30,7 +30,7 @@ export const Home = () => {
 				})}
 			</div>
 			<div className="col-12 mt-5">
-				<h1 className="text-danger">Planetas</h1>
+				<h1 className="text-warning border-bottom border-warning "> PLANETS </h1>
 			</div>
 			<div className="row overX">
 				{store.planetas.map((item, index) => {
